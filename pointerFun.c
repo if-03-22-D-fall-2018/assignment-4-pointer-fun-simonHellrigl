@@ -26,11 +26,15 @@ int main(int argc, char const *argv[]) {
   int *int_pointer;
 
   int_value = 55;
+  // it is assigned as a normal int
   int_pointer = &int_value;
+  // we assigne the pointer with & so we give it the adress of int_value if we want to get the value of int_pointer we have to use *
+  printf("%d\n",int_value );
+  printf("%d\n", *int_pointer );
+  printf("\n");
+
 
   print_integers(int_value, int_pointer);
-//  printf("%d\n",int_value );
-  //printf("%s\n", &int_pointer );
 
 
 

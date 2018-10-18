@@ -18,6 +18,8 @@ void change_integers(int int_value, int* int_pointer)
 {
   int_value = 66;
   int_pointer = &int_value;
+  //printf("%d\n",int_value );
+  //printf("%d\n", *int_pointer );
 }
 
 void print_integers(int int_value, int* int_pointer){
@@ -42,9 +44,17 @@ int main(int argc, char const *argv[]) {
   print_integers(int_value, int_pointer);
   change_integers(int_value, int_pointer);
   print_integers(int_value, int_pointer);
+  //it dont works because we only change the value in the void function
+  //if we print it in the function change_integer it would work (view the comments in change_integers)
 
-
-
+/*
+Task 7. Describe the five scenarios
+-declare a value:
+-declare a pointer:
+-get the value:
+-get the value of a pointer:
+-get the pointer of a value: 
+*/
 
 
 

@@ -14,6 +14,11 @@
  */
 #include <stdio.h>
 
+void change_integers(int int_value, int* int_pointer)
+{
+  int_value = 66;
+  int_pointer = &int_value;
+}
 
 void print_integers(int int_value, int* int_pointer){
   printf("Got an integer value %d and an address to an integer with value %d  \n ", int_value, *int_pointer );
@@ -34,6 +39,8 @@ int main(int argc, char const *argv[]) {
   printf("\n");
 
 
+  print_integers(int_value, int_pointer);
+  change_integers(int_value, int_pointer);
   print_integers(int_value, int_pointer);
 
 
